@@ -6,7 +6,7 @@ export const options = {
   vus: 100,
   duration: '30s',
   thresholds: {
-    'http_reqs{group:::loadTest}': ['rate>=100'],               //Set thresholds metrics for Throughput
+    'http_reqs{group:::loadTest}': ['rate>=200'],               //Set thresholds metrics for Throughput
     'http_req_duration{group:::loadTest}': ['p(95)<1000'],     //Set thresholds metrics for Response Time
     'http_req_failed{group:::loadTest}': ['rate<0.05'],       //Set thresholds metrics for Error Rate
   },
